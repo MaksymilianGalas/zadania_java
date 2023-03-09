@@ -1,7 +1,11 @@
-import java.util.Arrays;
 import java.util.Scanner;
 public class zad2_4 {
     public static void main(String[] args) {
+
+        metoda1();
+
+        }
+        public static int metoda1(){
             Scanner scan = new Scanner(System.in);
             System.out.println("Podaj szerokosc tablicy: ");
             int szerokosc = scan.nextInt();
@@ -19,7 +23,7 @@ public class zad2_4 {
                 }
                 System.out.println("");
             }
-
+            return 0;
         }
     }
 
