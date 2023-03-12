@@ -1,0 +1,7 @@
+Zadanie 2 - przed wykorzystaniem danych od użytkownika warto sprawdzić, czy są poprawnego typu. Komentarze należy dodać nad kodem, który komentują.
+Zadanie 3 - jeżeli metoda jest wykorzystywana tylko w ramach jednej klasy powinna być deklarowana jako private
+            Nazwa klasy powinny być wielką literą
+Zadanie 4 - nie do końca rozumiem po co ten komentarz System.out.printf(daneStudenta[naj][0] /* +" "+ daneStudenta[naj][1]  */ + " "+ iloscPunktow[naj]);
+Zadanie 6 - warto skorzystać z klauzuli default
+
+Ocena 5/5

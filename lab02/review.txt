@@ -1,0 +1,3 @@
+nie powinniśmy zostawiać zakomentowanych kawałków kodu w gotowym rozwiązaniu.
+
+Ocena 5/5
