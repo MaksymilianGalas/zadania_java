@@ -1,0 +1,5 @@
+1. Nazwy metod powinny być małą literą
+2. Jeżeli jest klasa Ułamek to ona powinna udostępniać tylko operacje, a w innej klasie te operacje realizowane już na konkretnym obiekcie.
+3. W konstruktorze nie powinny być realizowana jakaś specjalna logika, jedynie tworzenie obiektów.
+
+Ocena 5/5

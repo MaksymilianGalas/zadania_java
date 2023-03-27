@@ -1,0 +1,6 @@
+1. W klasach przyjęło, że najpierw mamy pola, potem konstruktory, a potem metody.
+2. Jeżeli definiujesz jakieś wartości słownikowe takie jak w klasie Wiatrak warto skorzystać wtedy z ENUMa.
+3. Tworzenie zmiennych statycznych nie jest rekomendowane, jedynie w jakiś uzasadnionych przypadkach, lepiej domyślnie korzystać z pól klasy, zamiast zmiennych statycznych
+4. W zadaniu 5 warto konkretne operacje na koncie udostępnić jako operacje na obiektach, tak aby uniwersalnie móc korzystać z operacji na obiektach.
+
+Ocena 5/5
