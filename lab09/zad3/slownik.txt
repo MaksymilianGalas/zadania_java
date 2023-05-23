@@ -1,0 +1,3 @@
+dom -> house
+pies -> dog
+kot -> cat
