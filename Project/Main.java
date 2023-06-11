@@ -5,15 +5,15 @@ import java.util.*;
 
 public class Main extends RandomWords{
     public static void main(String[] args) {
-        RandomWords randomWords = new RandomWords();
-        Gallows gallows = new Gallows();
+        RandomWords randomWords = new RandomWords(); //constructor
+        Gallows gallows = new Gallows(); //constructor
         String drawn = randomWords.drawnWord();
         Scanner scan = new Scanner(System.in);
-        String[] wordArr;
+        String[] wordArr;  //array to store chosen word, one letter at a time
         String[] guessedArr = new String[drawn.length()];
         String[] notGuessedArr = new String[50];
-        wordArr = drawn.split("(?!^)");
-        Arrays.fill(guessedArr, "_");
+        wordArr = drawn.split("(?!^)"); //function to split drawn word
+        Arrays.fill(guessedArr, "_"); //fills up empty spaces
         Arrays.fill(notGuessedArr, "");
         System.out.println("The word has been chosen!");
         String playerGuess;
@@ -38,7 +38,7 @@ public class Main extends RandomWords{
                             throw new IllegalArgumentException("Please input letters only");
                         }
                     } else {
-                        if (drawn.contains(playerGuess)) {
+                        if (drawn.contains(playerGuess)) {    // if letter chosen by the player exists in word, function changes "_" for letter
                             for (int i = 0; i < drawn.length(); i++) {
                                 if (playerGuess.equals(wordArr[i])) {
                                     guessedArr[i] = playerGuess;
@@ -61,7 +61,7 @@ public class Main extends RandomWords{
                             gallows.gallows((wrongLetters.length() - 1));
                             System.out.println("Wrong letters: " + wrongLetters.substring(0, wrongLetters.length() - 1));
                         } else {
-                            gallows.gallows((wrongLetters.length() - 1));
+                            gallows.gallows((wrongLetters.length() - 1)); //end of game
                             break;
                         }
                     }
