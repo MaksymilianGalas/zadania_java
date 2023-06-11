@@ -27,25 +27,22 @@ public class Main extends RandomWords{
         while (true) {
             System.out.println("Input one letter: ");
             try {
-                playerGuess = scan.nextLine();
+                playerGuess = scan.nextLine().toLowerCase();
+
                 try {
                     if (playerGuess.length() != 1) {
                         throw new IllegalArgumentException("Too much data, try again");
-                    } else if (!playerGuess.matches("[a-ząćęłńóśźż]")) {
-                        if (playerGuess.matches("[A-Z]")) {
-                            throw new IllegalArgumentException("Please input small letters only");
-                        } else {
-                            throw new IllegalArgumentException("Please input letters only");
-                        }
+                    } else if (!playerGuess.matches("(?i)[a-ząćęłńóśźż]")) {
+                        throw new IllegalArgumentException("Please input letters only");
                     } else {
-                        if (drawn.contains(playerGuess)) {    // if letter chosen by the player exists in word, function changes "_" for letter
+                        if (drawn.contains(playerGuess.toLowerCase())) {    // if letter chosen by the player exists in word, function changes "_" for letter
                             for (int i = 0; i < drawn.length(); i++) {
                                 if (playerGuess.equals(wordArr[i])) {
                                     guessedArr[i] = playerGuess;
                                 }
                             }
                         } else {
-                            if (!wrongLetters.contains(playerGuess)) {
+                            if (!wrongLetters.contains(playerGuess.toLowerCase())) {
                                 wrongLetters += playerGuess + ",";
                             } else {
                                 System.out.println("Don't input the same letter twice.");
